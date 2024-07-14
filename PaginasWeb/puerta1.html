@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Puerta 1 Revolución</title>
+        <meta name="description" content="Página de la puerta 1 de cucei">
+    
+        <!-- Preload -->
+        <link rel="preload" href="css/normalize.css" as="style">
+        <link rel="stylesheet" href="css/normalize.css">
+    
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+        <link rel="preload" href="css/style.css" as="style">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <header class="header">
+            <div class="barra">
+                <a class="logo">
+                    <h1 class="headerTitulo__Texto no-margin">Puerta 1<span class="logo__bold"> Revolución</span></h1>
+                </a>
+                <div id="reloj" class="texto-reloj">
+                    00:00:00
+                </div>
+            </div>
+        </header>
+    
+        <div class="contenedor">
+            <div class="tabla-container separar">
+                <h2 class="tabla-titulo">Citas Actuales</h2>
+                <table id="tablaActuales" class="formatoTabla">
+                    <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Marca del auto</th>
+                        <th>Placa del auto</th>
+                        <th>Color</th>
+                        <th>Hora de Entrada</th>
+                        <th>Modulo dirigido</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Aquí se llenarán los datos de las citas futuras desde PHP -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tabla-container separar">
+                <h2 class="tabla-titulo">Citas Futuras</h2>
+                <table id="tablaFuturas" class="formatoTabla">
+                    <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Marca del auto</th>
+                        <th>Placa del auto</th>
+                        <th>Color</th>
+                        <th>Hora de Entrada</th>
+                        <th>Modulo dirigido</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Aquí se llenarán los datos de las citas futuras desde PHP -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tabla-container">
+                <h2 class="tabla-titulo">Citas Pasadas</h2>
+                <table id="tablaPasadas" class="formatoTabla">
+                  <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Marca del auto</th>
+                      <th>Placa del auto</th>
+                      <th>Color</th>
+                      <th>Hora de Entrada</th>
+                      <th>Modulo dirigido</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Aquí se llenarán los datos de las citas pasadas desde PHP -->
+                  </tbody>
+                </table>
+              </div>
+        </div>
+    
+        <footer class="footer">
+            <div class="barra">
+                <a class="no-padding ">
+                    <h2 class="footer__Texto no-margin ">CENTRO UNIVERSITARIO DE CIENCIAS EXACTAS E INGENIERÍAS</h2>
+                    <h2 class="footer__Texto no-margin ">Blvd. Marcelino García Barragán #1421, esq Calzada Olímpica, C.P. 44430, Guadalajara, Jalisco, México.</h2>
+                    <h2 class="footer__Texto no-margin ">Teléfono: +52 33 1378 5900.</h2>
+                </a>
+            </div>
+        </footer>
+    
+        <script src="js/cargarBaseDatosPuerta1.js"></script>
+        <script src="js/reloj.js"></script>
+    </body>
+    
+    </html>

@@ -1,0 +1,9 @@
+Modulos extras:
+Para poner tamaños en porcentajes
+npm install react-native-responsive-screen --save
+
+
+Para poner un selector de opciones
+npm install react-native-modal-selector
+Fechas
+npm install date-fns --save

@@ -1,0 +1,287 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Globales **/
+.contenedor {
+    min-height: 70vh;
+    /* Altura mínima igual a la altura de la ventana gráfica del navegador */
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-tabla {
+    width: min(100%, 200rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/** Utilidades **/
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 99.8%;
+    margin: 0 auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 32%;
+    /* Ancho fijo para la primera columna */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 14%;
+    /* Ancho fijo para la segunda columna */
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 13%;
+    /* Ancho fijo para la tercera columna */
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 13%;
+    /* Ancho fijo para la cuarta columna */
+}
+th:nth-child(5),
+td:nth-child(5) {
+    width: 13%;
+    /* Ancho fijo para la quinta columna */
+}
+
+/** Header **/
+.header {
+    min-height: 12vh;
+    /* Altura mínima igual a la altura de la ventana gráfica del navegador */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--negro);
+}
+
+.header__texto {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+    .header__texto {
+        margin-top: 15rem;
+    }
+}
+
+.barra {
+    padding-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo__bold {
+    font-weight: 700;
+}
+
+.headerTitulo__Texto {
+    color: var(--blanco);
+    font-weight: 100;
+    margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        display: grid;
+    }
+}
+
+.footer {
+    background-color: var(--negro);
+    min-height: 18vh;
+    /* Altura mínima igual a la altura de la ventana gráfica del navegador */
+}
+
+.footer__Texto {
+    color: var(--blanco);
+    font-weight: 100;
+    margin-left: 1rem;
+}
+
+body,
+.contenedor {
+    flex-grow: 1;
+}
+
+.texto-reloj {
+    text-align: center;
+    color: var(--blanco);
+    font-size: 4rem;
+    /* Ajusta el tamaño del reloj según tus preferencias */
+    margin-right: 1rem;
+}
+
+.hora-pasada {
+    background-color: #FBDBDB;
+    /* Puedes cambiar el color según tus preferencias */
+    font-weight: bold;
+    /* Puedes aplicar un estilo de fuente diferente */
+}
+
+.tabla-container {
+    text-align: center;
+    border: 1px solid #3498db;
+    /* Azul */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #ecf0f1;
+    /* Blanco */
+}
+
+.tabla-titulo {
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* Agregado espacio inferior */
+    font-size: 3rem;
+    color: #e67e22;
+    /* Naranja */
+}
+
+.formatoTabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    /* Agregado espacio superior */
+}
+
+.formatoTabla th,
+.formatoTabla td {
+    border: 1px solid #3498db;
+    /* Azul */
+    padding: 8px;
+}
+
+.formatoTabla th {
+    background-color: #3498db;
+    /* Azul */
+    color: #fff;
+    /* Blanco */
+}
+
+.formatoTabla td {
+    background-color: #fff;
+    /* Blanco */
+    color: #333;
+    /* Texto oscuro */
+}
+
+.formatoTabla th:not(:last-child),
+.formatoTabla td:not(:last-child) {
+    border-right: 1px solid #fff;
+    /* Separación con una raya blanca */
+}
+
+.hora-pasada td {
+    background-color: #f19a17;
+    color: #000000;
+}
+
+.hora-futura td {
+    background-color: #84f4f4;
+    color: #000000;
+}
+
+.separar {
+    margin-bottom: 3rem;
+}
